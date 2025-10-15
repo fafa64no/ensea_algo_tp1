@@ -6,6 +6,11 @@
 #define ENSEA_ALGO_TP1_SUBSEQUENCE_H
 #include <vector>
 
+constexpr int MAXN = 5000;
+inline int n;
+inline int subSub[MAXN];
+inline int memo[MAXN];
+
 
 /*Étant donné une séquence d'entiers A = a[1..n] (n ≤ 5 000, -10000 ≤ a[i] ≤ 10000). Une sous-séquence
 de A est une séquence contenant un certain nombre d'éléments de A qui conservent leur ordre. Trouvez
@@ -14,7 +19,7 @@ Par exemple, si A = (1, 2, 3, 4, 9, 10, 5, 6, 7), la sous-séquence monotone (cr
 (1, 2, 3, 4, 5, 6, 7).
 6.1. Proposez un algorithme de programmation dynamique pour résoudre le problème. Vous détaillerez
 les étapes à construire la formule récursive*/
-std::vector<int>subSequence(const std::vector<int>&);
+int subSequence(int i);
 
 
 #endif //ENSEA_ALGO_TP1_SUBSEQUENCE_H
