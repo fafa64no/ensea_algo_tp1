@@ -8,8 +8,7 @@ int main(void) {
     long test = PGCD(221, 782);
     printf("%ld\n", test);
 
-    /*
-     */
+    /* SubSequence*/
     cout << "taille : ";
     cin >> n;
     cout << "Entrez les " << n << " entiers : ";
