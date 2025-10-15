@@ -11,6 +11,7 @@ int main() {
 
     TestFunctions::test_queue_by_array();
     TestFunctions::test_queue_by_circular_array();
+    TestFunctions::test_queue_by_linked_list();
 
     return EXIT_SUCCESS;
 }
