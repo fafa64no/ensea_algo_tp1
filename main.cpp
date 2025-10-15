@@ -1,7 +1,6 @@
-#include <iostream>
-
-
-int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+#include "src/PGCD.h"
+#include <cstdio>
+int main(void) {
+    long test = PGCD(221,782);
+    printf("%ld\n", test);
 }
