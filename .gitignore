@@ -1,0 +1,15 @@
+# IDE
+.idea/
+.vscode/
+.cproject/
+
+# Build
+cmake-build-debug/
+build/
+
+# Other
+*.local
+*.local.*
+
+
+
