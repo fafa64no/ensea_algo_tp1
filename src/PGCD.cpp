@@ -1,7 +1,7 @@
 //
 // Created by yael on 10/15/25.
 //
-
+#include <cstdio>
 #include "PGCD.h"
 
 
@@ -15,3 +15,4 @@ long PGCD(const long a, const long b){
         return PGCD(a,b-a);
     }
 }
+
