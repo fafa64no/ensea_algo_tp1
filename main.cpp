@@ -9,19 +9,7 @@ int main(void) {
     printf("%ld\n", test);
 
     /* SubSequence*/
-    cout << "taille : ";
-    cin >> n;
-    cout << "Entrez les " << n << " entiers : ";
-    for (int i = 0; i < n; ++i) cin >> subSub[i];
-
-    fill(memo, memo + n, -1);
-
-    int res = 0;
-    for (int i = 0; i < n; ++i) {
-    res = max(res, subSequence(i));
-    }
-
-    cout << "best : " << res << endl;
+   subSequenceFull();
 
 
 }
