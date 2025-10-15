@@ -7,10 +7,11 @@
 #include <memory>
 
 #include "StackByArray.h"
+#include "StackByLinkedList.h"
 
 
 void TestFunctions::test_stack_by_array() {
-    const auto stack = std::make_unique<StackByArray>();
+    const auto stack = std::make_unique<StackByLinkedList>();
 
     stack->addValue(4);
     stack->addValue(43);
@@ -25,6 +26,20 @@ void TestFunctions::test_stack_by_array() {
 }
 
 
+void TestFunctions::test_stack_by_linked_list() {
+    const auto stack = std::make_unique<StackByArray>();
+
+    stack->addValue(4);
+    stack->addValue(43);
+    stack->addValue(14);
+    stack->addValue(4213);
+
+    const int test_out_1 = stack->popValue();
+    const int test_out_2 = stack->popValue();
+    const int test_out_3 = stack->popValue();
+    const int test_out_4 = stack->popValue();
+    const int test_out_5 = stack->popValue();
+}
 
 
 

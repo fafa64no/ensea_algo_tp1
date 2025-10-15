@@ -13,6 +13,7 @@ public:
 
     virtual void addValue(int value) = 0;
     virtual int popValue() = 0;
+    [[nodiscard]] virtual bool isEmpty() const = 0;
 };
 
 

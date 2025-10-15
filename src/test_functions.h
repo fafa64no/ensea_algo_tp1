@@ -7,6 +7,7 @@
 
 namespace TestFunctions {
     void test_stack_by_array();
+    void test_stack_by_linked_list();
 }
 
 #endif //ENSEA_ALGO_TP1_TEST_FUNCTIONS_H
