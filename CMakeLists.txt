@@ -6,6 +6,10 @@ set(CMAKE_CXX_STANDARD 20)
 add_executable(ensea_algo_tp1
         main.cpp
         src/Pile.cpp
+        src/PGCD.cpp
+        src/PGCD.h
+        src/subSequence.cpp
+        src/subSequence.h
 )
 
 target_include_directories(ensea_algo_tp1 PRIVATE
