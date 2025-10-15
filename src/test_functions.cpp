@@ -6,6 +6,7 @@
 
 #include <memory>
 
+#include "QueueByArray.h"
 #include "StackByArray.h"
 #include "StackByLinkedList.h"
 
@@ -41,6 +42,20 @@ void TestFunctions::test_stack_by_linked_list() {
     const int test_out_5 = stack->popValue();
 }
 
+void TestFunctions::test_queue_by_array() {
+    const auto queue = std::make_unique<QueueByArray>();
+
+    queue->addToQueue(4);
+    queue->addToQueue(43);
+    queue->addToQueue(14);
+    queue->addToQueue(4213);
+
+    const int test_out_1 = queue->removeFromQueue();
+    const int test_out_2 = queue->removeFromQueue();
+    const int test_out_3 = queue->removeFromQueue();
+    const int test_out_4 = queue->removeFromQueue();
+    const int test_out_5 = queue->removeFromQueue();
+}
 
 
 

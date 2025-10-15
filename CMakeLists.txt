@@ -8,9 +8,11 @@ add_executable(ensea_algo_tp1
         src/test_functions.cpp
         src/stack/StackByArray.cpp
         src/stack/StackByLinkedList.cpp
+        src/queue/QueueByArray.cpp
 )
 
 target_include_directories(ensea_algo_tp1 PRIVATE
         src
         src/stack
+        src/queue
 )
