@@ -10,6 +10,7 @@ int main() {
     TestFunctions::test_stack_by_linked_list();
 
     TestFunctions::test_queue_by_array();
+    TestFunctions::test_queue_by_circular_array();
 
     return EXIT_SUCCESS;
 }
