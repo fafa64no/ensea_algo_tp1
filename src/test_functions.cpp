@@ -4,9 +4,11 @@
 
 #include "test_functions.h"
 
+#include <iostream>
 #include <memory>
 
 #include "BinaryTreeMax.h"
+#include "BinaryTreeMin.h"
 #include "QueueByArray.h"
 #include "QueueByCircularArray.h"
 #include "QueueByLinkedList.h"
@@ -15,6 +17,8 @@
 
 
 void TestFunctions::test_stack_by_array() {
+    std::cout << "TestFunctions::test_stack_by_array:" << std::endl;
+
     const auto stack = std::make_unique<StackByLinkedList>();
 
     stack->addValue(4);
@@ -31,6 +35,8 @@ void TestFunctions::test_stack_by_array() {
 
 
 void TestFunctions::test_stack_by_linked_list() {
+    std::cout << "TestFunctions::test_stack_by_linked_list:" << std::endl;
+
     const auto stack = std::make_unique<StackByArray>();
 
     stack->addValue(4);
@@ -47,6 +53,8 @@ void TestFunctions::test_stack_by_linked_list() {
 
 
 void TestFunctions::test_queue_by_array() {
+    std::cout << "TestFunctions::test_queue_by_array:" << std::endl;
+
     const auto queue = std::make_unique<QueueByArray>();
 
     queue->addToQueue(4);
@@ -62,6 +70,8 @@ void TestFunctions::test_queue_by_array() {
 }
 
 void TestFunctions::test_queue_by_circular_array() {
+    std::cout << "TestFunctions::test_queue_by_circular_array:" << std::endl;
+
     const auto queue = std::make_unique<QueueByCircularArray>();
 
     queue->addToQueue(4);
@@ -77,6 +87,8 @@ void TestFunctions::test_queue_by_circular_array() {
 }
 
 void TestFunctions::test_queue_by_linked_list() {
+    std::cout << "TestFunctions::test_queue_by_linked_list:" << std::endl;
+
     const auto queue = std::make_unique<QueueByLinkedList>();
 
     queue->addToQueue(4);
@@ -93,6 +105,8 @@ void TestFunctions::test_queue_by_linked_list() {
 
 
 void TestFunctions::test_binary_tree_max() {
+    std::cout << "TestFunctions::test_binary_tree_max:" << std::endl;
+
     const auto tree = std::make_unique<BinaryTreeMax>();
     const std::vector<int> test_values{27, 12, 8, 45, 17, 63, 100, 5, 75, 90, 26, 32, 188, 95};
 
@@ -106,6 +120,24 @@ void TestFunctions::test_binary_tree_max() {
         tree->printStructure();
     }
 }
+
+void TestFunctions::test_binary_tree_min() {
+    std::cout << "TestFunctions::test_binary_tree_min:" << std::endl;
+
+    const auto tree = std::make_unique<BinaryTreeMin>();
+    const std::vector<int> test_values{27, 12, 8, 45, 17, 63, 100, 5, 75, 90, 26, 32, 188, 95};
+
+    for (const int test_value : test_values) {
+        tree->pushValue(test_value);
+        tree->printStructure();
+    }
+
+    for (int i = 0; i < test_values.size() + 1; i++) {
+        tree->popValue();
+        tree->printStructure();
+    }
+}
+
 
 
 

@@ -14,6 +14,7 @@ int main() {
     TestFunctions::test_queue_by_linked_list();
 
     TestFunctions::test_binary_tree_max();
+    TestFunctions::test_binary_tree_min();
 
     return EXIT_SUCCESS;
 }

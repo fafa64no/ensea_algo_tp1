@@ -13,6 +13,7 @@ add_executable(ensea_algo_tp1
         src/queue/QueueByLinkedList.cpp
         src/binary_tree/BinaryTree.cpp
         src/binary_tree/BinaryTreeMax.cpp
+        src/binary_tree/BinaryTreeMin.cpp
 )
 
 target_include_directories(ensea_algo_tp1 PRIVATE

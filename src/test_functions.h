@@ -14,6 +14,7 @@ namespace TestFunctions {
     void test_queue_by_linked_list();
 
     void test_binary_tree_max();
+    void test_binary_tree_min();
 }
 
 #endif //ENSEA_ALGO_TP1_TEST_FUNCTIONS_H
