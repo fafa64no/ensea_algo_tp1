@@ -16,5 +16,8 @@ int main() {
     TestFunctions::test_binary_tree_max();
     TestFunctions::test_binary_tree_min();
 
+    TestFunctions::test_pgcd();
+    TestFunctions::test_sub_sequence();
+
     return EXIT_SUCCESS;
 }

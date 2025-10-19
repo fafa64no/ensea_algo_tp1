@@ -9,11 +9,13 @@
 
 #include "BinaryTreeMax.h"
 #include "BinaryTreeMin.h"
+#include "PGCD.h"
 #include "QueueByArray.h"
 #include "QueueByCircularArray.h"
 #include "QueueByLinkedList.h"
 #include "StackByArray.h"
 #include "StackByLinkedList.h"
+#include "subSequence.h"
 
 
 void TestFunctions::test_stack_by_array() {
@@ -138,6 +140,19 @@ void TestFunctions::test_binary_tree_min() {
     }
 }
 
+
+void TestFunctions::test_pgcd() {
+    std::cout << "TestFunctions::test_pgcd:" << std::endl;
+
+    const long test = PGCD(221, 782);
+    printf("%ld\n", test);
+}
+
+void TestFunctions::test_sub_sequence() {
+    std::cout << "TestFunctions::test_sub_sequence:" << std::endl;
+
+    subSequenceFull();
+}
 
 
 

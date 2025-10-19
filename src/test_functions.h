@@ -15,6 +15,9 @@ namespace TestFunctions {
 
     void test_binary_tree_max();
     void test_binary_tree_min();
+
+    void test_pgcd();
+    void test_sub_sequence();
 }
 
 #endif //ENSEA_ALGO_TP1_TEST_FUNCTIONS_H
