@@ -21,7 +21,7 @@ void StackByLinkedList::addValue(const int value) {
 
 int StackByLinkedList::popValue() {
     if (isEmpty()) {
-        std::cerr << "StackByLinkedList::addValue: Stack underflow" << std::endl;
+        std::cerr << "StackByLinkedList::popValue: Stack underflow" << std::endl;
         return STACK_UNDERFLOW_DEFAULT_VALUE;
     }
     const int value = stack_top->value;

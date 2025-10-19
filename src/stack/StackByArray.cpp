@@ -19,7 +19,7 @@ void StackByArray::addValue(const int value) {
 
 int StackByArray::popValue() {
     if (isEmpty()) {
-        std::cerr << "StackByArray::addValue: Stack underflow" << std::endl;
+        std::cerr << "StackByArray::popValue: Stack underflow" << std::endl;
         return STACK_UNDERFLOW_DEFAULT_VALUE;
     }
     const int value = stack_array[stack_top];

@@ -13,5 +13,7 @@ int main() {
     TestFunctions::test_queue_by_circular_array();
     TestFunctions::test_queue_by_linked_list();
 
+    TestFunctions::test_binary_tree_max();
+
     return EXIT_SUCCESS;
 }

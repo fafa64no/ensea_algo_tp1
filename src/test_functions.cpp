@@ -6,6 +6,7 @@
 
 #include <memory>
 
+#include "BinaryTreeMax.h"
 #include "QueueByArray.h"
 #include "QueueByCircularArray.h"
 #include "QueueByLinkedList.h"
@@ -90,6 +91,21 @@ void TestFunctions::test_queue_by_linked_list() {
     const int test_out_5 = queue->removeFromQueue();
 }
 
+
+void TestFunctions::test_binary_tree_max() {
+    const auto tree = std::make_unique<BinaryTreeMax>();
+    const std::vector<int> test_values{27, 12, 8, 45, 17, 63, 100, 5, 75, 90, 26, 32, 188, 95};
+
+    for (const int test_value : test_values) {
+        tree->pushValue(test_value);
+        tree->printStructure();
+    }
+
+    for (int i = 0; i < test_values.size() + 1; i++) {
+        tree->popValue();
+        tree->printStructure();
+    }
+}
 
 
 
